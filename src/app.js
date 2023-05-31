@@ -16,6 +16,7 @@ window.onload = () => {
     "during my lunch",
     "while I was praying"
   ];
+  let space = " ";
   let whoRandom = Math.floor(Math.random() * who.length);
   let actionRandom = Math.floor(Math.random() * action.length);
   let whatRandom = Math.floor(Math.random() * what.length);
@@ -23,7 +24,10 @@ window.onload = () => {
 
   document.querySelector("#excuse").innerHTML =
     `${who[whoRandom]}` +
+    " " +
     `${action[actionRandom]}` +
+    " " +
     `${what[whatRandom]}` +
+    " " +
     `${when[whenRandom]}`;
 };
